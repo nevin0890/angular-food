@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CardcarouselComponent } from './cardcarousel/cardcarousel.component';
 import { RouterModule, Routes } from '@angular/router';
+import { OrdersComponent } from './orders/orders.component';
 
 const appRoutes: Routes = [
   { path: '', component: CardcarouselComponent },
+  { path: 'orders', component: OrdersComponent },
 ]
 
 
@@ -16,7 +18,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     NavbarComponent,
-    CardcarouselComponent
+    CardcarouselComponent,
+    OrdersComponent
   ],
   imports: [
     BrowserModule,
